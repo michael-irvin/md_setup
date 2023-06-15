@@ -1,5 +1,5 @@
 import os
-import h5py
+# import h5py
 import logging
 import tempfile
 import subprocess
@@ -11,8 +11,8 @@ import parmed as pmd
 # import simtk.openmm as omm
 import simtk.unit as u
 
-from rdkit import Chem
-from mendeleev import element
+# from rdkit import Chem
+# from mendeleev import element
 from MDAnalysis.analysis import distances
 from MDAnalysis.analysis import align
 
