@@ -12,7 +12,7 @@ outpath = f"{os.path.splitext(filepath)[0]}_chain{os.path.splitext(filepath)[1]}
 f = open(filepath, 'r')
 out = open(outpath, 'w')
 
-chain_ids = list(string.ascii_uppercase + string.ascii_lowercase)
+chain_ids = list(string.ascii_uppercase + "0123456789"+ string.ascii_lowercase)
 
 current_chain = chain_ids.pop(0)
 for line in f:
