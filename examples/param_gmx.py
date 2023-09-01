@@ -17,8 +17,8 @@ os.makedirs(host_dir, exist_ok=True)
 
 # specify your input pdb
 pdb = args.structure_filepath
-# ff_dir = os.path.abspath('charmm36-feb2021.ff') 
 
+# ff_dir = f'{packagedir}/forcefields/amber99sb-ildn.ff' # Produces this error: openmm.OpenMMException: PeriodicTorsionForce: periodicity must be positive
 ff_dir = f'{packagedir}/forcefields/charmm36-feb2021.ff'
 mdp_file = f'{packagedir}/forcefields/ions.mdp'
 
